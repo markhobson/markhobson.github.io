@@ -1,0 +1,12 @@
+main {
+	padding: 2rem 1.5rem;
+}
+
+footer {
+	padding: 1rem 0;
+	border-top: .05rem solid #e5e5e5;
+}
+
+footer a {
+	color: #999;
+}

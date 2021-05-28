@@ -57,7 +57,7 @@ With genetic algorithms under my belt, the next technique I needed to understand
 
 A simple neural network consists of three layers of neurons connected by synapses. The first layer receives the input, transforms it through weights on its synapses to a hidden layer, which in turn transforms it to the final layer for output. This flow of data through the network is known as _forward propagation_. The input can be anything that represents the problem at hand, for example pixel values in image recognition, and the output represents the computed answer, like whether it’s a [hotdog or not](https://www.youtube.com/watch?v=ACmydtFDTGs).
 
-![Neural Network](Neural-Network.png)
+![Neural Network](neural-network.png)
 
 The magic of neural networks lies in fine-tuning the transformation of the input data as it’s pushed through the layers. This technique is known as _back propagation_ and it is key to how neural networks appear to learn. The idea starts by feeding an input through the network and comparing the output with the expected result. The difference is passed through a cost function and then used to adjust the synapses a layer at a time from the output back to the input. Repeating this process with many different inputs results in the network starting to reflect the desired behaviour. The theory behind this is rather maths heavy; I’d recommend watching [Neural Networks Demystified](https://www.youtube.com/playlist?list=PLiaHhY2iBX9hdHaRr6b7XevZtgZRa1PoU) for an in-depth explanation.
 
@@ -101,7 +101,7 @@ Input	Output			Target
 
 As the output suggests, we can plot this as a graph:
 
-![Neural Network Sine](Neural-Network-Sine.png)
+![Neural Network Sine](neural-network-sine.png)
 
 Given the limited set of training data we can see that the network has approximated the sine function quite well. The training data points 0.25, 0.5 and 0.75 are spot on, but the obvious discrepancies are at the extremities. It’s fair to say that these points cannot be inferred from the training data, but we may also be hitting a limitation of the number of neurons in the network, or the fact that the neurons do not support a [bias](https://stackoverflow.com/questions/2480650/role-of-bias-in-neural-networks).
 
@@ -117,7 +117,7 @@ This conceptually simple idea quickly poses some difficult questions. How best t
 
 NEAT encodes neurons and synapses as _node_ and _connection_ genes respectively. A node gene simply states which layer it lives in, whereas a connection gene specifies which nodes it connects, its weight and an enabled flag. Additionally, every time a connection is created a _global innovation number_ is incremented and assigned to the gene. We will see later how this innovation number is used to perform crossover.
 
-![Genetic Encoding](Genetic-Encoding.png)
+![Genetic Encoding](genetic-encoding.png)
 
 ### Mutation
 
@@ -125,11 +125,11 @@ Mutation of the network can occur in several ways: connection weights are pertur
 
 To illustrate, a _connection gene mutation_ simply adds a new connection gene to join two previously unconnected nodes:
 
-![Connection Mutation](Connection-Mutation.png)
+![Connection Mutation](connection-mutation.png)
 
 Whereas a _node gene mutation_ disables an existing connection gene and adds a new node and connections in its place:
 
-![Node Mutation](Node-Mutation.png)
+![Node Mutation](node-mutation.png)
 
 ### Crossover
 
@@ -139,11 +139,11 @@ Genes that occur in both genomes are chosen randomly for the offspring, whereas 
 
 For example, consider the following two parent networks:
 
-![Crossover Parents](Crossover-Parents.png)
+![Crossover Parents](crossover-parents.png)
 
 We can align their genes by innovation number and combine them as described to produce an offspring:
 
-![Crossover Offspring](Crossover-Offspring.png)
+![Crossover Offspring](crossover-offspring.png)
 
 ### Species
 

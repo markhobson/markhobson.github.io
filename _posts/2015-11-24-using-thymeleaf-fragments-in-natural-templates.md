@@ -1,6 +1,7 @@
-# Using Thymeleaf fragments in natural templates
-
-24/11/2015
+---
+title: Using Thymeleaf fragments in natural templates
+date: 2015-11-24 00:00:00 +0000
+---
 
 At Black Pepper we have enjoyed using [Thymeleaf](http://www.thymeleaf.org/) as the templating engine on several of our projects. Its non-invasive syntax and [tight integration with the Spring Framework](http://www.thymeleaf.org/doc/tutorials/2.1/thymeleafspring.html) offers a far more pleasant experience than the bygone days of JSP. The unique feature of Thymeleaf, though, that makes it so attractive for us is its concept of 'natural templates'.
 

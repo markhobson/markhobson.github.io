@@ -1,8 +1,9 @@
-# Managing complexity with a hexagonal architecture
+---
+title: Managing complexity with a hexagonal architecture
+date: 2016-01-07 00:00:00 +0000
+---
 
-07/01/2016
-
-![Apis Florea Nest Closeup2](apis_florea_nest_closeup2.jpg)
+![Apis Florea Nest Closeup2](/assets/posts/2016-01-07-managing-complexity-with-a-hexagonal-architecture/apis_florea_nest_closeup2.jpg)
 
 A recurring theme in software development is how to grow systems over time whilst keeping control of complexity. The industry is constantly awash with ideas on how to achieve this, from [Hexagonal Architecture](http://alistair.cockburn.us/Hexagonal+architecture) to [Microservices](http://martinfowler.com/articles/microservices.html) and [CQRS](http://martinfowler.com/bliki/CQRS.html), making the decision of which path to follow increasingly tough.
 
@@ -22,7 +23,7 @@ Don't be mislead into thinking that the name 'hexagonal architecture' places any
 
 This all sounds great, but what does a real life hexagonal architecture look like? Below is an architectural diagram of the server component from one of our projects (I used concentric circles instead of hexagons for ease of drawing):
 
-![Hexagonal Architecture](hexagonal-architecture.png)
+![Hexagonal Architecture](/assets/posts/2016-01-07-managing-complexity-with-a-hexagonal-architecture/hexagonal-architecture.png)
 
 In this diagram the yellow inner circle depicts the essence of the application; the 'hexagon' itself. This contains the various APIs together with the white arrows that denote the ports. Plugging into these ports are the adapters that are represented by the green segments. The outer blue ring is the server that assembles and configures the various components to produce the runtime binary. Finally, the solid black lines show module boundaries which are distinct compilation units, whereas the dashed black lines demonstrate logical partitions within a module that could be broken apart if desired.
 

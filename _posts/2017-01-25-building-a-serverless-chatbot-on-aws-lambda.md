@@ -1,12 +1,11 @@
-# Building a serverless chatbot on AWS Lambda
+---
+title: Building a serverless chatbot on AWS Lambda
+description: ​How to use AWS Lambda and the Serverless Framework to write a Slack chatbot.
+date: 2017-01-25 00:00:00 +0000
+tags: aws lambda serverless slack chatbot
+---
 
-_​How to use AWS Lambda and the Serverless Framework to write a Slack chatbot._
-
-_aws, lambda, serverless, slack, chatbot_
-
-25/01/2017
-
-![Serverless Chatbot Blog](serverless-chatbot-blog.jpg)
+![Serverless Chatbot Blog](/assets/posts/2017-01-25-building-a-serverless-chatbot-on-aws-lambda/serverless-chatbot-blog.jpg)
 
 For my training last year I decided to have a play with [serverless architectures](http://martinfowler.com/articles/serverless.html). This idea continues the trend of [microservices](http://www.martinfowler.com/articles/microservices.html) by decomposing applications into stateless functions that are deployed to a cloud service.
 
@@ -14,7 +13,7 @@ Why take this approach? Aside from the obvious benefit of no longer having to ma
 
 A chatbot is a great fit for this style of architecture as it is dormant most of the time, only springing into life momentarily to respond to messages. I didn’t want to spend time worrying about AI so I decided to write a frivolous bot to demonstrate the approach. This bot purports to save users valuable time by automatically reacting to messages with a tenuously related emoji, so they don’t have to.
 
-![Emojibot Example](emojibot-example.png)
+![Emojibot Example](/assets/posts/2017-01-25-building-a-serverless-chatbot-on-aws-lambda/emojibot-example.png)
 
 ## AWS Lambda
 
@@ -232,6 +231,6 @@ I'll spare you the detail but the crux of the implementation goes roughly as fol
 
 Behold the power of emojibot:
 
-![Emojibot Demo](emojibot-demo.gif)
+![Emojibot Demo](/assets/posts/2017-01-25-building-a-serverless-chatbot-on-aws-lambda/emojibot-demo.gif)
 
 The full source code is available on [GitHub](https://github.com/markhobson/emojibot/) if you'd like to browse the finished product. Happy chatbotting! 😂

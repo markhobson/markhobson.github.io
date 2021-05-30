@@ -1,12 +1,17 @@
-# Neuroevolution II
+---
+title: Neuroevolution II
+description: Genetically evolving neural networks to play Pong.
+date: 2019-01-29 00:00:00 +0000
+tags:
+- genetic algorithms
+- neural networks
+- neuroevolution
+- pong
+- ai
+- machine learning
+---
 
-_Genetically evolving neural networks to play Pong._
-
-_genetic algorithms, neural networks, neuroevolution, pong, ai, machine learning_
-
-29/01/2019
-
-![Ping Pong](ping-pong.jpg)
+![Ping Pong](/assets/posts/2019-01-29-neuroevolution-ii/ping-pong.jpg)
 
 Last year [I wrote about my quest](https://www.blackpepper.co.uk/blog/neuroevolution) to understand the artificial intelligence technique of [neuroevolution](https://en.wikipedia.org/wiki/Neuroevolution). This form of AI builds upon classic neural networks by removing the need for supervised learning. Instead, genetic algorithms are used to evolve the structure of the network without human intervention.
 
@@ -18,7 +23,7 @@ We first needed to decide on a game for our bot to play. The choice depended on 
 
 With this in mind we opted for the video game classic [Pong](https://en.wikipedia.org/wiki/Pong). My [original neuroevolution code](https://github.com/markhobson/ai-demo/tree/master/src/main/java/neuroevolution) was in Java so we wrote a simple Pong clone in Swing, keeping the game graphics lo-res and omitting match score for simplicity. At this point both players had manual controls so we could enjoy play testing the game.
 
-![Pong Humans](pong-humans.png)
+![Pong Humans](/assets/posts/2019-01-29-neuroevolution-ii/pong-humans.png)
 _Humans playing Pong_
 
 ## Ready player one
@@ -31,13 +36,13 @@ If we were playing a more complicated game than Pong then a reasonable approach 
 
 The outputs seemed more obvious. In Pong the player can either move the bat up or down. Less apparent is that they can also elect to do nothing, which we included as an option to encourage the bot to be less hyperactive. Thus we modelled the outputs with three nodes, one for each option, where the strongest signal wins.
 
-![Pong Neural Network](pong-neural-network.png)
+![Pong Neural Network](/assets/posts/2019-01-29-neuroevolution-ii/pong-neural-network.png)
 
 Now that we could supply the inputs and act upon the outputs, the remaining task was to feed the data through the network to connect them up. Intuitively one envisages the data propagating forward through the network, indeed this is how classic matrix-based forward propagation is implemented, but with an irregular shaped network it was actually simpler to pull data from the output nodes. This was predominantly due to recursion providing a more concise solution to evaluating a variable number of different sized hidden layers.
 
 We now had enough pieces of the puzzle to assemble our first bot. To validate this we created a random neural network, and with a fortuitous strike of lightning, unleashed it onto a game of Pong and declared [it’s alive](https://www.youtube.com/watch?v=1qNeGSJaQ9Q)!
 
-![Pong Random Genome](pong-random-genome.gif)
+![Pong Random Genome](/assets/posts/2019-01-29-neuroevolution-ii/pong-random-genome.gif)
 _A random genome twitching_
 
 ## Witness the fitness
@@ -46,7 +51,7 @@ One genome playing Pong was a good start, but to harness genetic algorithms we n
 
 We expanded our single genome to an initial population of random genomes and played them out sequentially. To measure their success we simply counted the number of frames that they were alive before the ball went out; the reasoning being that the more often they returned the ball, the better the bot was at playing Pong.
 
-![Pong Population](pong-population.gif)
+![Pong Population](/assets/posts/2019-01-29-neuroevolution-ii/pong-population.gif)
 _Playing out a population in sequence_
 
 As entertaining as it was to watch each match in realtime, we needed a faster approach before we considered evolving multiple generations. To achieve this we introduced a headless mode to the game that bypassed plotting graphics and just updated the in-memory game state. As no-one was watching these games we could also increase the frame rate. Together these changes reduced the time taken to evaluate a population down to fractions of a second.
@@ -57,7 +62,7 @@ All that now remained between us and evolving King Pong was to implement the sta
 
 To help visualise the learning process we selected the fittest bot from each generation and played them sequentially:
 
-![Pong Generations](pong-generations.gif)
+![Pong Generations](/assets/posts/2019-01-29-neuroevolution-ii/pong-generations.gif)
 _Playing out the fittest from each generation_
 
 ## Hitting the wall
@@ -68,7 +73,7 @@ This is a perfect situation for [coevolution](https://en.wikipedia.org/wiki/Coev
 
 As exciting as this would have been to try, we felt that this would complicate matters before we could confidently evolve a single player. Deferring that idea for now we simply replaced the other player with a solid wall. As every bored kid knows, a wall always returns a ball.
 
-![Pong Wall](pong-wall.gif)
+![Pong Wall](/assets/posts/2019-01-29-neuroevolution-ii/pong-wall.gif)
 _A perfect player against a wall_
 
 This small change resulted in our bot becoming more sentient than we had catered for. It soon learnt how to play the perfect game and our simulation never ended. To prevent this we introduced a timeout that would terminate the game after so many frames.
@@ -77,7 +82,7 @@ This small change resulted in our bot becoming more sentient than we had catered
 
 Now that we were getting some genuinely interesting behaviour we wondered what exactly we had evolved. To help visualise the bot we added support to output the neural network as [Graphviz](https://graphviz.org/). Here is the genome playing the game above:
 
-![Pong Perfect Player](pong-perfect-player.png)
+![Pong Perfect Player](/assets/posts/2019-01-29-neuroevolution-ii/pong-perfect-player.png)
 
 Matching the inputs and outputs to those described earlier, we can see that the bats’ positions are linked to moving up and the ball’s y-coordinate is linked to moving down. As the strongest signal wins, this network represents a seesaw between the ball position causing the bat to move in one direction, and the bat’s new position then causing it to move in the other direction. Note that there is some evolutionary deadwood here that has no net effect but was pivotal to obtaining this structure.
 
@@ -89,9 +94,9 @@ It was becoming obvious that our simple ball collision mechanics made for rather
 
 One final aspect of neuroevolution that we didn’t touch on during this experiment was [speciation](https://en.wikipedia.org/wiki/Speciation). This protects innovation against ruthlessly pursuing survival of the fittest. We have since had a chance to revisit this and added preliminary support for species which resulted in much more sophisticated behaviour.
 
-![Pong Speciation](pong-speciation.gif)
+![Pong Speciation](/assets/posts/2019-01-29-neuroevolution-ii/pong-speciation.gif)
 _A bot evolved with speciation_
 
 You can find our resultant [neuroevolution library](https://github.com/BlackPepperSoftware/neuroevolution) on GitHub, along with the [Pong demo](https://github.com/BlackPepperSoftware/neuroevolution/tree/master/src/main/java/uk/co/blackpepper/neuroevolution/demo/pong). Perhaps next time we'll finish hi-res graphics, speciation, and coevolution. Until then, let us know if you have any success integrating it with other games and any feedback is always welcome.
 
-![Game Over](game-over.png)
+![Game Over](/assets/posts/2019-01-29-neuroevolution-ii/game-over.png)

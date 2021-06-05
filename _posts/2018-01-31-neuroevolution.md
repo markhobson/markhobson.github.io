@@ -14,7 +14,7 @@ tags:
 
 It’s hard to escape the topic of machine learning in the news today, as headlines proclaim the imminent arrival of autonomous vehicles and programs are crowned world champion Go players. Not wishing to be left behind I thought it prudent to spend my training last year getting to grips with the basics.
 
-[MarI/O - Machine Learning for Video Games](https://www.youtube.com/embed/qv6UVOQ0F44)
+{% include video id="qv6UVOQ0F44" provider="youtube" %}
 
 I was inspired by the above video shared by a colleague of a program learning how to play Super Mario World. Without human intervention it goes from mashing random buttons to mastering the level. The technique behind this seemingly magical feat is known as [neuroevolution](https://en.wikipedia.org/wiki/Neuroevolution) – a combination of genetic algorithms and neural networks. It was this that I set out to understand.
 

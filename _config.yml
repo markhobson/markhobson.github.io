@@ -66,6 +66,7 @@ defaults:
       header:
         overlay_filter: 0.25
       show_date: true
+      read_time: true
   # _pages
   - scope:
       path: ""

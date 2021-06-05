@@ -38,7 +38,7 @@ If we were playing a more complicated game than Pong then a reasonable approach 
 
 The outputs seemed more obvious. In Pong the player can either move the bat up or down. Less apparent is that they can also elect to do nothing, which we included as an option to encourage the bot to be less hyperactive. Thus we modelled the outputs with three nodes, one for each option, where the strongest signal wins.
 
-![Pong Neural Network](/assets/posts/2019-01-29-neuroevolution-ii/pong-neural-network.png)
+![Pong Neural Network](/assets/posts/2019-01-29-neuroevolution-ii/pong-neural-network.png){: .align-center}
 
 Now that we could supply the inputs and act upon the outputs, the remaining task was to feed the data through the network to connect them up. Intuitively one envisages the data propagating forward through the network, indeed this is how classic matrix-based forward propagation is implemented, but with an irregular shaped network it was actually simpler to pull data from the output nodes. This was predominantly due to recursion providing a more concise solution to evaluating a variable number of different sized hidden layers.
 
@@ -101,4 +101,4 @@ _A bot evolved with speciation_
 
 You can find our resultant [neuroevolution library](https://github.com/BlackPepperSoftware/neuroevolution) on GitHub, along with the [Pong demo](https://github.com/BlackPepperSoftware/neuroevolution/tree/master/src/main/java/uk/co/blackpepper/neuroevolution/demo/pong). Perhaps next time we'll finish hi-res graphics, speciation, and coevolution. Until then, let us know if you have any success integrating it with other games and any feedback is always welcome.
 
-![Game Over](/assets/posts/2019-01-29-neuroevolution-ii/game-over.png)
+![Game Over](/assets/posts/2019-01-29-neuroevolution-ii/game-over.png){: .align-center}

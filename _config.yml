@@ -20,6 +20,7 @@
 
 title: Mark Hobson
 description: My personal presence on the IndieWeb.
+logo: /assets/images/avatar.jpg
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 

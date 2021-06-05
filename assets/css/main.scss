@@ -4,6 +4,10 @@
 
 @charset "utf-8";
 
+// Turn off all animations
+$intro-transition: none;
+$global-transition: none;
+
 // Circular site logo
 .site-logo img {
   border-radius: 50%;

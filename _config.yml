@@ -54,6 +54,8 @@ plugins:
 include:
   - _pages
 
+date_format: "%d %B %Y"
+
 defaults:
   # _posts
   - scope:
@@ -63,6 +65,7 @@ defaults:
       layout: single
       header:
         overlay_filter: 0.25
+      show_date: true
   # _pages
   - scope:
       path: ""

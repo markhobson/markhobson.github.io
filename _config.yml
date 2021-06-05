@@ -61,6 +61,8 @@ defaults:
       type: posts
     values:
       layout: single
+      header:
+        overlay_filter: 0.25
   # _pages
   - scope:
       path: ""

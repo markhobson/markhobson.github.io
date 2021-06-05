@@ -2,6 +2,10 @@
 title: Cucumber Row Pattern
 description: Pattern for data loading and verification in Cucumber acceptance tests.
 date: 2017-03-30 00:00:00 +0000
+header:
+  overlay_image: /assets/posts/2017-03-30-cucumber-row-pattern/greenhouse-2139526_1920.jpg
+  image_description: Cucumber Row Pattern
+excerpt: Pattern for data loading and verification in Cucumber acceptance tests.
 tags:
 - cucumber
 - acceptance tests
@@ -9,8 +13,6 @@ tags:
 - data verification
 - data tables
 ---
-
-![Cucumber Row Pattern](/assets/posts/2017-03-30-cucumber-row-pattern/greenhouse-2139526_1920.jpg)
 
 Many projects at Black Pepper benefit from [behaviour-driven development](https://en.wikipedia.org/wiki/Behavior-driven_development) (BDD) which allows acceptance tests to be understood by business stakeholders and yet still be executable by machines. Our go-to tool for this is typically [Cucumber](https://cucumber.io/) as its specifications are very readable and it enjoys support across [many platforms](http://specflow.org/).
 

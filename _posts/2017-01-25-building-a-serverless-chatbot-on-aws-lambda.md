@@ -2,10 +2,12 @@
 title: Building a serverless chatbot on AWS Lambda
 description: ​How to use AWS Lambda and the Serverless Framework to write a Slack chatbot.
 date: 2017-01-25 00:00:00 +0000
+header:
+  overlay_image: /assets/posts/2017-01-25-building-a-serverless-chatbot-on-aws-lambda/serverless-chatbot-blog.jpg
+  image_description: Serverless Chatbot Blog
+excerpt: ​How to use AWS Lambda and the Serverless Framework to write a Slack chatbot.
 tags: aws lambda serverless slack chatbot
 ---
-
-![Serverless Chatbot Blog](/assets/posts/2017-01-25-building-a-serverless-chatbot-on-aws-lambda/serverless-chatbot-blog.jpg)
 
 For my training last year I decided to have a play with [serverless architectures](http://martinfowler.com/articles/serverless.html). This idea continues the trend of [microservices](http://www.martinfowler.com/articles/microservices.html) by decomposing applications into stateless functions that are deployed to a cloud service.
 

@@ -1,9 +1,11 @@
 ---
 title: Managing complexity with a hexagonal architecture
 date: 2016-01-07 00:00:00 +0000
+header:
+  overlay_image: /assets/posts/2016-01-07-managing-complexity-with-a-hexagonal-architecture/apis_florea_nest_closeup2.jpg
+  image_description: Apis Florea Nest Closeup2
+excerpt: ""
 ---
-
-![Apis Florea Nest Closeup2](/assets/posts/2016-01-07-managing-complexity-with-a-hexagonal-architecture/apis_florea_nest_closeup2.jpg)
 
 A recurring theme in software development is how to grow systems over time whilst keeping control of complexity. The industry is constantly awash with ideas on how to achieve this, from [Hexagonal Architecture](http://alistair.cockburn.us/Hexagonal+architecture) to [Microservices](http://martinfowler.com/articles/microservices.html) and [CQRS](http://martinfowler.com/bliki/CQRS.html), making the decision of which path to follow increasingly tough.
 

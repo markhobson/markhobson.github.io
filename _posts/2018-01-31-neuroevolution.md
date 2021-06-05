@@ -2,13 +2,15 @@
 title: Neuroevolution
 description: Learning how to genetically evolve neural networks.
 date: 2018-01-31 00:00:00 +0000
+header:
+  overlay_image: /assets/posts/2018-01-31-neuroevolution/medical-abstract-swirls-1-1151086.jpg
+  image_description: Medical Abstract Swirls 1 1151086
+excerpt: Learning how to genetically evolve neural networks.
 tags:
 - genetic algorithms
 - neural networks
 - neuroevolution
 ---
-
-![Medical Abstract Swirls 1 1151086](/assets/posts/2018-01-31-neuroevolution/medical-abstract-swirls-1-1151086.jpg)
 
 It’s hard to escape the topic of machine learning in the news today, as headlines proclaim the imminent arrival of autonomous vehicles and programs are crowned world champion Go players. Not wishing to be left behind I thought it prudent to spend my training last year getting to grips with the basics.
 

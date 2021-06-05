@@ -56,10 +56,19 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+include:
+  - _pages
+
 defaults:
   # _posts
   - scope:
       path: ""
       type: posts
+    values:
+      layout: single
+  # _pages
+  - scope:
+      path: ""
+      type: pages
     values:
       layout: single

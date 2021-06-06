@@ -51,6 +51,16 @@ html {
   display: none;
 }
 
+// Increase archive item meta font size
+.list__item .page__meta {
+  font-size: $type-size-6;
+}
+
+// Increase archive item excerpt font size
+.archive__item-excerpt {
+  font-size: $type-size-5;
+}
+
 /*
  * Single
  */

@@ -42,6 +42,11 @@ html {
   display: none;
 }
 
+// Remove bold from post updated date label
+.page__meta strong {
+  font-weight: normal;
+}
+
 /*
  * Footer
  */

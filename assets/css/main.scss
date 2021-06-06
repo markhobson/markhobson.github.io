@@ -34,6 +34,15 @@ html {
 }
 
 /*
+ * Navigation
+ */
+
+// Hide navigation link decoration
+.greedy-nav .visible-links a:hover::before {
+  display: none;
+}
+
+/*
  * Single
  */
 

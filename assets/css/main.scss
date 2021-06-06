@@ -4,6 +4,12 @@
 
 @charset "utf-8";
 
+// Neutralise social icons colours
+$github-color: #666;
+$instagram-color: #666;
+$rss-color: #666;
+$twitter-color: #666;
+
 // Turn off all animations
 $intro-transition: none;
 $global-transition: none;
@@ -25,4 +31,23 @@ html {
   @include breakpoint($x-large) {
     font-size: 18px;
   }
+}
+
+/*
+ * Footer
+ */
+
+// Increase footer follow icons font size
+.page__footer-follow li {
+  font-size: $type-size-4;
+}
+
+// Remove footer follow icons label padding
+.page__footer-follow a {
+  padding-right: 0;
+}
+
+// Increase footer copyright font size
+.page__footer-copyright {
+  font-size: $type-size-6;
 }

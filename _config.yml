@@ -54,6 +54,7 @@ plugins:
 include:
   - _pages
 
+locale: en-GB
 date_format: "%d %B %Y"
 
 defaults:
@@ -76,12 +77,12 @@ defaults:
 
 footer:
   links:
-    - label: "Twitter"
+    - label: ""
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/markhobson"
-    - label: "GitHub"
+    - label: ""
       icon: "fab fa-fw fa-github"
       url: "https://github.com/markhobson"
-    - label: "Instagram"
+    - label: ""
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/mihobson"

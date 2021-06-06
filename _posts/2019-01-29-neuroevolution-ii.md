@@ -17,7 +17,7 @@ tags:
 
 Last year [I wrote about my quest](https://www.blackpepper.co.uk/blog/neuroevolution) to understand the artificial intelligence technique of [neuroevolution](https://en.wikipedia.org/wiki/Neuroevolution). This form of AI builds upon classic neural networks by removing the need for supervised learning. Instead, genetic algorithms are used to evolve the structure of the network without human intervention.
 
-My plan was to use neuroevolution to learn how to play a simple video game, but sadly I ran out of time. Fast forward to the end of the year and we had the opportunity to [run a week-long experiment](https://www.blackpepper.co.uk/blog/making-time-to-experiment) of innovation at Black Pepper. Four of us decided to try [mob programming](https://en.wikipedia.org/wiki/Mob_programming), and continuing where I left off, see if we could evolve a video games master.
+My plan was to use neuroevolution to learn how to play a simple video game, but sadly I ran out of time. Fast forward to the end of the year and we had the opportunity to [run a week-long experiment](https://www.blackpepper.co.uk/blog/making-time-to-experiment) of innovation at [Black Pepper](https://www.blackpepper.co.uk/). Four of us decided to try [mob programming](https://en.wikipedia.org/wiki/Mob_programming), and continuing where I left off, see if we could evolve a video games master.
 
 ## Let the games begin
 

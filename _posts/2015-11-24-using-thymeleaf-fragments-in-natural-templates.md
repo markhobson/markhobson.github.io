@@ -6,7 +6,7 @@ header:
 excerpt: ""
 ---
 
-At Black Pepper we have enjoyed using [Thymeleaf](http://www.thymeleaf.org/) as the templating engine on several of our projects. Its non-invasive syntax and [tight integration with the Spring Framework](http://www.thymeleaf.org/doc/tutorials/2.1/thymeleafspring.html) offers a far more pleasant experience than the bygone days of JSP. The unique feature of Thymeleaf, though, that makes it so attractive for us is its concept of 'natural templates'.
+At [Black Pepper](https://www.blackpepper.co.uk/) we have enjoyed using [Thymeleaf](http://www.thymeleaf.org/) as the templating engine on several of our projects. Its non-invasive syntax and [tight integration with the Spring Framework](http://www.thymeleaf.org/doc/tutorials/2.1/thymeleafspring.html) offers a far more pleasant experience than the bygone days of JSP. The unique feature of Thymeleaf, though, that makes it so attractive for us is its concept of 'natural templates'.
 
 ## Natural templates
 

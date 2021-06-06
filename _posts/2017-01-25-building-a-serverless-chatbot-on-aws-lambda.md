@@ -95,7 +95,7 @@ It works! Now we just need to turn this into a chatbot.
 
 ## Slack bots
 
-At Black Pepper we’re big fans of [Slack](https://slack.com/) so it made sense to write my chatbot for that platform. Slack provides two APIs for bot integration: the [Real Time Messaging API](https://api.slack.com/rtm) and the [Events API](https://api.slack.com/events-api). The former uses WebSockets to pass events over a persistent connection, whereas the latter invokes a specified endpoint for certain events. Understandably, the transient nature of AWS Lambda means that it does not support WebSockets, so we'll have to adopt the Events API.
+At [Black Pepper](https://www.blackpepper.co.uk/) we’re big fans of [Slack](https://slack.com/) so it made sense to write my chatbot for that platform. Slack provides two APIs for bot integration: the [Real Time Messaging API](https://api.slack.com/rtm) and the [Events API](https://api.slack.com/events-api). The former uses WebSockets to pass events over a persistent connection, whereas the latter invokes a specified endpoint for certain events. Understandably, the transient nature of AWS Lambda means that it does not support WebSockets, so we'll have to adopt the Events API.
 
 In this scenario we'll subscribe our Lambda's endpoint to Slack's `message.channels` event so that it'll be notified whenever a message is posted in a channel. Our function will receive a JSON representation of the message in a POST request body, process it asynchronously, and acknowledge receipt with an HTTP OK response. Once the message has been processed, we can then send a reply back to the Slack channel by using the [Web API](https://api.slack.com/web).
 

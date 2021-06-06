@@ -9,7 +9,7 @@ excerpt: ""
 
 A recurring theme in software development is how to grow systems over time whilst keeping control of complexity. The industry is constantly awash with ideas on how to achieve this, from [Hexagonal Architecture](http://alistair.cockburn.us/Hexagonal+architecture) to [Microservices](http://martinfowler.com/articles/microservices.html) and [CQRS](http://martinfowler.com/bliki/CQRS.html), making the decision of which path to follow increasingly tough.
 
-At Black Pepper we like to trial new approaches to best understand how they can benefit our development teams and ultimately our customers. We recently adopted the Hexagonal Architecture pattern (also known as Ports & Adapters) on one of our projects and were pleased with the outcome.
+At [Black Pepper](https://www.blackpepper.co.uk/) we like to trial new approaches to best understand how they can benefit our development teams and ultimately our customers. We recently adopted the Hexagonal Architecture pattern (also known as Ports & Adapters) on one of our projects and were pleased with the outcome.
 
 ## Hexagonal Architecture
 

@@ -51,9 +51,6 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-include:
-  - _pages
-
 locale: en-GB
 date_format: "%d %B %Y"
 

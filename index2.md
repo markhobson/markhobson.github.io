@@ -3,5 +3,9 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-title: Posts
+title: markh.me
+header:
+  overlay_image: /assets/images/hero.jpg
+  image_description: Snowy mountains in Norway
+excerpt: My personal presence on the [IndieWeb](https://indieweb.org/).
 ---

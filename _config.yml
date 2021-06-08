@@ -54,6 +54,9 @@ plugins:
 locale: en-GB
 date_format: "%d %B %Y"
 
+twitter:
+  username: markhobson
+
 defaults:
   # _posts
   - scope:

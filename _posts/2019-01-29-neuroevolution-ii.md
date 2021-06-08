@@ -3,7 +3,7 @@ title: Neuroevolution II
 description: Genetically evolving neural networks to play Pong.
 date: 2019-01-29 00:00:00 +0000
 header:
-  overlay_image: /assets/posts/2019-01-29-neuroevolution-ii/ping-pong.jpg
+  overlay_image: /assets/posts/2019-01-29-neuroevolution-ii/ping-pong-1600.jpg
   image_description: Ping Pong
 excerpt: Genetically evolving neural networks to play Pong.
 tags:

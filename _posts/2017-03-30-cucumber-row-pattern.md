@@ -3,7 +3,7 @@ title: Cucumber Row Pattern
 description: Pattern for data loading and verification in Cucumber acceptance tests.
 date: 2017-03-30 00:00:00 +0000
 header:
-  overlay_image: /assets/posts/2017-03-30-cucumber-row-pattern/greenhouse-2139526_1920.jpg
+  overlay_image: /assets/posts/2017-03-30-cucumber-row-pattern/greenhouse-2139526_1920-1600.jpg
   image_description: Cucumber Row Pattern
 excerpt: Pattern for data loading and verification in Cucumber acceptance tests.
 tags:

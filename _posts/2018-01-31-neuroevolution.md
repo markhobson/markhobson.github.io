@@ -3,7 +3,7 @@ title: Neuroevolution
 description: Learning how to genetically evolve neural networks.
 date: 2018-01-31 00:00:00 +0000
 header:
-  overlay_image: /assets/posts/2018-01-31-neuroevolution/medical-abstract-swirls-1-1151086.jpg
+  overlay_image: /assets/posts/2018-01-31-neuroevolution/medical-abstract-swirls-1-1151086-1600.jpg
   image_description: Medical Abstract Swirls 1 1151086
 excerpt: Learning how to genetically evolve neural networks.
 tags:

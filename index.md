@@ -5,7 +5,7 @@
 layout: home
 title: markh.me
 header:
-  overlay_image: /assets/images/hero.jpg
+  overlay_image: /assets/images/hero-1600.jpg
   image_description: Snowy mountains in Norway
 excerpt: My personal presence on the [IndieWeb](https://indieweb.org/).
 ---

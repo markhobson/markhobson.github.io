@@ -3,7 +3,7 @@ title: Building a serverless chatbot on AWS Lambda
 description: ​How to use AWS Lambda and the Serverless Framework to write a Slack chatbot.
 date: 2017-01-25 00:00:00 +0000
 header:
-  overlay_image: /assets/posts/2017-01-25-building-a-serverless-chatbot-on-aws-lambda/serverless-chatbot-blog.jpg
+  overlay_image: /assets/posts/2017-01-25-building-a-serverless-chatbot-on-aws-lambda/serverless-chatbot-blog-1600.jpg
   image_description: Serverless Chatbot Blog
 excerpt: ​How to use AWS Lambda and the Serverless Framework to write a Slack chatbot.
 tags: aws lambda serverless slack chatbot

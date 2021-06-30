@@ -15,9 +15,9 @@ tags:
 - machine learning
 ---
 
-Last year [I wrote about my quest](https://www.blackpepper.co.uk/blog/neuroevolution) to understand the artificial intelligence technique of [neuroevolution](https://en.wikipedia.org/wiki/Neuroevolution). This form of AI builds upon classic neural networks by removing the need for supervised learning. Instead, genetic algorithms are used to evolve the structure of the network without human intervention.
+Last year [I wrote about my quest](https://www.markh.me/2018/01/31/neuroevolution.html) to understand the artificial intelligence technique of [neuroevolution](https://en.wikipedia.org/wiki/Neuroevolution). This form of AI builds upon classic neural networks by removing the need for supervised learning. Instead, genetic algorithms are used to evolve the structure of the network without human intervention.
 
-My plan was to use neuroevolution to learn how to play a simple video game, but sadly I ran out of time. Fast forward to the end of the year and we had the opportunity to [run a week-long experiment](https://www.blackpepper.co.uk/blog/making-time-to-experiment) of innovation at [Black Pepper](https://www.blackpepper.co.uk/). Four of us decided to try [mob programming](https://en.wikipedia.org/wiki/Mob_programming), and continuing where I left off, see if we could evolve a video games master.
+My plan was to use neuroevolution to learn how to play a simple video game, but sadly I ran out of time. Fast forward to the end of the year and we had the opportunity to [run a week-long experiment](https://vurt.co.uk/post/making_time_to_experiment/) of innovation at [Black Pepper](https://www.blackpepper.co.uk/). Four of us decided to try [mob programming](https://en.wikipedia.org/wiki/Mob_programming), and continuing where I left off, see if we could evolve a video games master.
 
 ## Let the games begin
 
@@ -60,7 +60,7 @@ As entertaining as it was to watch each match in realtime, we needed a faster ap
 
 ## The generation game
 
-All that now remained between us and evolving King Pong was to implement the standard genetic algorithm loop. I covered much of this in my [previous post](https://www.blackpepper.co.uk/blog/neuroevolution) so I’ll skim over it here. We used roulette wheel selection to choose bots to breed and performed crossover and mutation as specified by [NEAT](http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf). Once this grunt work was done we could evolve the next generation from the initial population, repeating the process until we were satisfied with our bot’s Pong playing skills.
+All that now remained between us and evolving King Pong was to implement the standard genetic algorithm loop. I covered much of this in my [previous post](https://www.markh.me/2018/01/31/neuroevolution.html) so I’ll skim over it here. We used roulette wheel selection to choose bots to breed and performed crossover and mutation as specified by [NEAT](http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf). Once this grunt work was done we could evolve the next generation from the initial population, repeating the process until we were satisfied with our bot’s Pong playing skills.
 
 To help visualise the learning process we selected the fittest bot from each generation and played them sequentially:
 

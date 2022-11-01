@@ -133,7 +133,7 @@ So now we know how to plot complete sprites with masks, but we have the problem 
 
 Consider that we have plotted a letter on the left-hand edge of the screen, and we want it to scroll by one word to the left. The actual outcome would be that we are only displaying the three right-hand words in each row, instead of all four. Next frame, it would be the two right-hand words and so on:
 
-![Figure 2](/assets/posts/1994-04-01-showing-off-i/figure2.png)
+![Figure 2](/assets/posts/1994-04-01-showing-off-i/figure2.png){: .align-center}
 _Scrolling letters to the left_
 
 So what we need is a variation of the previous sprite-plotting routine that plots only part of the sprite. Now we have three routines to plot letters: one to plot a whole letter, another to plot a letter scrolling off the screen and one to plot a letter scrolling on.

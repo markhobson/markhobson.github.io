@@ -78,14 +78,8 @@ defaults:
 footer:
   links:
     - label: ""
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/markhobson"
-    - label: ""
       icon: "fab fa-fw fa-mastodon"
       url: "https://mastodon.social/@markhobson"
     - label: ""
       icon: "fab fa-fw fa-github"
       url: "https://github.com/markhobson"
-    - label: ""
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/mihobson"
